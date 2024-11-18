@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Aninha's</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        .header {
+            background-color: #ff4de7;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        /* Barra de navegação */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ff4de7;
+        }
+
+        /* Seção do menu */
+        .menu-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .menu-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ff4de1;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .menu-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .menu-item .price {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ff4dd8;
+        }
+
+        /* Rodapé */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Aninha's Burguer</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="menu" class="menu-section">
+        <h2>Nosso Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Hambúrguer Clássico</h3>
+                <p>Pão macio, carne suculenta e ingredientes frescos.</p>
+                <p class="price">R$ 20,00</p>
+            </div>
+            <div class="menu-item">
+                <h3>Cheddar Bacon</h3>
+                <p>Carne com queijo cheddar derretido e bacon crocante.</p>
+                <p class="price">R$ 25,00</p>
+            </div>
+            <div class="menu-item">
+                <h3>Vegetariano</h3>
+                <p>Opção saudável com hambúrguer de grão-de-bico e vegetais.</p>
+                <p class="price">R$ 22,00</p>
+            </div>
+            <div class="menu-item">
+                <h3>Double Scooby</h3>
+                <p>Dois hambúrgueres, queijo extra e molho especial.</p>
+                <p class="price">R$ 30,00</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Scooby's Burgers. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
